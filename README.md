@@ -11,11 +11,7 @@
 This repository contains the projects developed during the MLOps course offered by the UFRN, taught by Professor Ivanovitch Silva.
 
 ## 📂 Projects
-Listed below are projects from the `Python_Essentials_for_MLOps` module:
-
-- 📘 [Project 01](./Python_Essentials_for_MLOps/Project%2001/)
-- 📙 [Project 02](./Python_Essentials_for_MLOps/Project%2002/)
-- 📕 [Project 03](./Python_Essentials_for_MLOps/Project%2003/)
+- 📘 [Python_Essentials_for_MLOps](./Python_Essentials_for_MLOps/)
 
 🔜 More content will be added as the course progresses.
 
@@ -24,3 +20,4 @@ Listed below are projects from the `Python_Essentials_for_MLOps` module:
 
 ## 📚 References
 1. [Ivanovitch's Repository](github.com/ivanovitchm/mlops)
+2. [Dataquest (project-walkthroughs)](https://github.com/dataquestio/project-walkthroughs/blob/master/movie_recs/movie_recommendations.ipynb)
