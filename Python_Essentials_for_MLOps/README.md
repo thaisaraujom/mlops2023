@@ -5,9 +5,9 @@ This subfolder emphasizes the foundational Python skills required for MLOps. As 
 
 ## 📂 Project Description
 Inside, you'll find three primary projects:
-1. **Project 01**: a Movie Recommendation System in Python.
-2. **Project 02**: (Brief description of Project 02)
-3. **Project 03**: (Brief description of Project 03)
+- [**Project 01**: A Movie Recommendation System in Python ](./Project%2001/) 🎬
+<!-- - **Project 02**: (Brief description of Project 02)
+-  **Project 03**: (Brief description of Project 03) -->
 
 Each project showcases various Python techniques and methodologies applied within the MLOps framework.
 

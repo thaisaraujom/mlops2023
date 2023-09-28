@@ -1,5 +1,5 @@
-# Project 01 - a Movie Recommendation System in Python
-The project is based on the 'Build a Movie Recommendation System in Python', a Portfolio Project available on [Dataquest](https://app.dataquest.io/). The goal is to modify the project by applying the concepts learned in the MLOps course.
+# 🎬 Project 01 - A Movie Recommendation System in Python
+The project is based on the _Build a Movie Recommendation System in Python_, a Portfolio Project available on [Dataquest](https://app.dataquest.io/). The goal is to modify the project by applying the concepts learned in the MLOps course.
 
 ## 🔧 Requirements/Technologies
 - **Python**: Version 3.10.8
@@ -32,7 +32,7 @@ The project is based on the 'Build a Movie Recommendation System in Python', a P
    ```
     pytest
    ```
-7. Alternatively, you can use **GitHub Codespaces** for development:
+7. Alternatively, you can use **GitHub Codespaces** for a quick setup:
    - In the main repository page, click on the `Code` button and select `Codespaces`.
    - From the dropdown, select `Open with Codespaces` or `Create codespace on main`.
    - This will initiate a Codespace environment where you can code directly in the browser without local setup.
