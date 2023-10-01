@@ -50,14 +50,14 @@ The project, based on the _Build an Airflow Data Pipeline to Download Podcasts_ 
 9. Run the project in airflow UI manually pressing the `play` button in the `podcast_summary` DAG or define a schedule for the DAG to run automatically for a given interval.
 
 10. To run the tests, run the following command:
-   ```
-    pytest
-   ```
+      ```
+      pytest
+      ```
 
 11. To run the linter, run the following command:
-   ```
-    pylint podcast_summary.py
-   ```
+      ```
+      pylint podcast_summary.py
+      ```
 
 ## 📚 References
 - [Jupyter Notebook for the original project (Dataquest)](https://github.com/dataquestio/project-walkthroughs/tree/master/podcast_summary)
