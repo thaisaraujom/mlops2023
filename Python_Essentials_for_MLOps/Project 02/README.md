@@ -60,4 +60,4 @@ The project, based on the _Build an Airflow Data Pipeline to Download Podcasts_ 
       ```
 
 ## 📚 References
-- [Jupyter Notebook for the original project (Dataquest)](https://github.com/dataquestio/project-walkthroughs/tree/master/podcast_summary)
+- [Code for the original project (Dataquest)](https://github.com/dataquestio/project-walkthroughs/tree/master/podcast_summary)
