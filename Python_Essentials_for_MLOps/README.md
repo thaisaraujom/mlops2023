@@ -21,10 +21,10 @@
 ## 📜 Introduction
 This subfolder emphasizes the foundational Python skills required for MLOps. As part of the broader MLOps 2023 course, this module dives into Python's role and its utilities in the Machine Learning Operations landscape.
 
-## 📂 Project Description
+## 📂 Project
 - [**Project 01** - A Movie Recommendation System in Python ](./Project%2001/) 🎬
-<!-- - **Project 02**: (Brief description of Project 02)
--  **Project 03**: (Brief description of Project 03) -->
+- [**Project 02** - An Airflow Data Pipeline to Download Podcasts ](./Project%2002/) 🎙️
+<!-- -  **Project 03**: (Brief description of Project 03) -->
 
 Each project showcases various Python techniques and methodologies applied within the MLOps framework.
 
@@ -35,4 +35,5 @@ For a deeper dive into the projects and their workings, check out this [Loom vid
 Certificate of completion for the course: [Intermediate Python for Web Development](https://app.dataquest.io/view_cert/AXUVGRJG23AHG91MHI5Y)
 
 ## 📚 References
-- [Dataquest (project-walkthroughs)](https://github.com/dataquestio/project-walkthroughs/blob/master/movie_recs/movie_recommendations.ipynb)
+- [Build a Movie Recommendation System in Python (Dataquest)](https://github.com/dataquestio/project-walkthroughs/blob/master/movie_recs/movie_recommendations.ipynb)
+- [Build an Airflow Data Pipeline to Download Podcasts (Dataquest)](https://github.com/dataquestio/project-walkthroughs/blob/master/podcast_summary/podcast_summary.py)

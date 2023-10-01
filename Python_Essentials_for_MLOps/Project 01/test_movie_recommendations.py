@@ -5,7 +5,6 @@ import os
 import pandas as pd
 from movie_recommendations import clean_title
 
-# Clean title tests
 def test_clean_title() -> None:
     """
     Test the clean_title function.

@@ -19,5 +19,5 @@ This repository contains the projects developed during the MLOps course offered 
 📜 The materials in this repository are licensed under the MIT License. For in-depth details, consult the `LICENSE` file.
 
 ## 📚 References
-1. [Ivanovitch's Repository](github.com/ivanovitchm/mlops)
+1. [Ivanovitch's Repository](https://github.com/ivanovitchm/mlops)
 2. [Dataquest (project-walkthroughs)](https://github.com/dataquestio/project-walkthroughs/blob/master/movie_recs/movie_recommendations.ipynb)
