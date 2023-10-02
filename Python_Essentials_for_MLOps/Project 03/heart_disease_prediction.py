@@ -68,7 +68,6 @@ def log_data_info(dataframe: pd.DataFrame) -> None:
     )
 
 
-
 def plot_categorical_counts(dataframe: pd.DataFrame,
                             categorical_columns: list,
                             save_path: str) -> None:
@@ -107,6 +106,7 @@ def plot_categorical_counts(dataframe: pd.DataFrame,
     plt.savefig(f'{save_path}categorical_plots.png')
     logging.info('%sPlots saved to %scategorical_plots.png', SUCCESS_EMOJI, save_path)
     logging.info('%s Plotting completed in %s seconds.', INFO_EMOJI, time.time() - start_time)
+
 
 def clean_data(dataframe: pd.DataFrame) -> pd.DataFrame:
     """
