@@ -50,7 +50,7 @@ def load_data(file_path: str) -> pd.DataFrame:
 
 def log_data_info(dataframe: pd.DataFrame) -> None:
     """
-    Log some basic information about the data in a Pandas DataFrame.
+    Log some basic informations about the data in a Pandas DataFrame.
 
     Args:
         dataframe: Pandas DataFrame containing the data.
@@ -98,7 +98,8 @@ def plot_categorical_counts(dataframe: pd.DataFrame,
         plot_axis = plt.subplot(rows, columns, idx + 1)
         sns.countplot(x=dataframe[col], ax=plot_axis)
         plot_axis.set_title(f'Count of {col}')
-        # add data labels to each bar
+
+        # Add data labels to each bar
         for container in plot_axis.containers:
             plot_axis.bar_label(container, label_type="center")
 
@@ -120,11 +121,18 @@ def clean_data(dataframe: pd.DataFrame) -> pd.DataFrame:
     """
     logging.debug('%s Starting data cleaning process.', DEBUG_EMOJI)
     df_clean = dataframe.copy()
-    # only keep non-zero values for RestingBP
+
+    # Filter out rows with 'RestingBP' 0
     df_clean = df_clean[df_clean["RestingBP"] != 0]
+
+    # Mask for 'HeartDisease' 0
     heart_disease_mask = df_clean["HeartDisease"] == 0
+
+    # Separate 'Cholesterol' values based on 'HeartDisease' status
     cholesterol_without_heart_disease = df_clean.loc[heart_disease_mask, "Cholesterol"]
     cholesterol_with_heart_disease = df_clean.loc[~heart_disease_mask, "Cholesterol"]
+
+    # Replace 0s in 'Cholesterol' with median values for each group
     df_clean.loc[heart_disease_mask, "Cholesterol"] = cholesterol_without_heart_disease.replace(
         to_replace=0, value=cholesterol_without_heart_disease.median())
     df_clean.loc[~heart_disease_mask, "Cholesterol"] = cholesterol_with_heart_disease.replace(
@@ -277,6 +285,8 @@ def main():
                                                         label_data,
                                                         test_size=0.15,
                                                         random_state=417)
+
+    # Features selected
     features = ["Oldpeak", "Sex_M", "ExerciseAngina_Y", "ST_Slope_Flat", "ST_Slope_Up"]
 
     # Train and evaluate k-NN with single features
@@ -287,7 +297,8 @@ def main():
         logging.info(
             '%s The k-NN classifier trained on %s and with k = 3 '
             'has an accuracy of %.2f%%',
-            INFO_EMOJI, feature, accuracy * 100)  # Updated this line
+            INFO_EMOJI, feature, accuracy * 100)
+
     # Train and evaluate k-NN with multiple features
     train_knn(x_train, x_test, y_train, y_test, features)
 
@@ -301,8 +312,7 @@ def main():
     # Evaluate the model with the test set
     evaluate_model(grid, x_test[features], y_test)
 
-    # Print distribution of sex in datasets
-    log_sex_distribution(feature_data, x_train, x_test)  # Atualizado x para feature_data
+    log_sex_distribution(feature_data, x_train, x_test)
     logging.info('%s Program execution completed.', SUCCESS_EMOJI)
 
 if __name__ == "__main__":
