@@ -29,7 +29,7 @@ This subfolder emphasizes the foundational Python skills required for MLOps. As 
 Each project showcases various Python techniques and methodologies applied within the MLOps framework.
 
 ## 🎥 Video Explanation
-For a deeper dive into the projects and their workings, check out this [Loom video](LOOM_VIDEO_URL).
+For a deeper dive into the projects and their workings, check out this [Loom video](https://www.loom.com/share/2eb27935bdf9415f8db10d4547dcfa56?sid=80c0100e-bbb8-4425-99a6-68b340337cfd).
 
 ## 🏆 Certificate
 Certificate of completion for the course: [Intermediate Python for Web Development](https://app.dataquest.io/view_cert/AXUVGRJG23AHG91MHI5Y).
