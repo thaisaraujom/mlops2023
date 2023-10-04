@@ -40,7 +40,7 @@ def download_data() -> None:
         # Download the file
         logging.info("🚀 Starting download from %s.", url)
 
-        with requests.Session() as session: 
+        with requests.Session() as session:
             response = session.get(url, stream=True)
             total_size = int(response.headers.get('content-length', 0))
 
