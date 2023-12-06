@@ -107,8 +107,8 @@ Below are the confusion matrices for each of the models used in the classificati
    <th style="text-align: center;">Model 3</th>
 </tr>
 <tr>
-   <td><img src="./img/13_model2_matrix.png" alt="Confusion Matrix for Model 2"></td>
-   <td><img src="./img/14_model3_matrix.png" alt="Confusion Matrix for Model 3"></td>
+   <td style="text-align: center;"><img src="./img/13_model2_matrix.png" alt="Confusion Matrix for Model 2"></td>
+   <td style="text-align: center;"><img src="./img/14_model3_matrix.png" alt="Confusion Matrix for Model 3"></td>
 </tr>
 <tr>
    <td colspan="2" style="text-align: center;"><strong>Model 4</strong></td>
@@ -117,6 +117,7 @@ Below are the confusion matrices for each of the models used in the classificati
    <td colspan="2" style="text-align: center;"><img src="./img/12_model4_matrix.png" alt="Confusion Matrix for Model 4"></td>
 </tr>
 </table>
+
 
 ## 📈 Loss and Accuracy Plots
 
