@@ -29,14 +29,14 @@ The script provides an automated solution for preparing data for an NLP applicat
 The script is structured to perform an Exploratory Data Analysis (EDA) on a dataset of disaster-related tweets. It incorporates functions that automate the processes of downloading and loading the dataset, logging dataset information, generating visualizations, and logging the analysis results to Weights & Biases (WandB). 
 
 <p align="center">
-   <img src="./img/3_eda.png" width="700">
+   <img src="./img/3_eda.png" width="900">
 </p>
 
 ### 3. Preprocessing
 The script is a comprehensive set of functions designed for preprocessing a dataset of tweets related to disasters, suitable for NLP tasks. It begins by initializing a Weights & Biases (WandB) run to download a specific dataset artifact, which is then loaded into a pandas DataFrame. The preprocessing steps include text normalization like converting to lowercase and removing punctuation, tokenization to split text into words, elimination of stopwords, and lemmatization to reduce words to their base forms. The cleaned text is then used to generate word clouds for both disaster and non-disaster tweets, providing a visual exploration of the most frequent terms in each category. Finally, the script creates and logs a new artifact in WandB for the preprocessed data, ensuring that the preprocessing steps are recorded and reproducible.
 
 <p align="center">
-   <img src="./img/4_processing.png" width="800">
+   <img src="./img/4_processing.png" width="900">
 </p>
 
 ### 4. Data Check
@@ -50,7 +50,7 @@ The script's purpose is to perform data validation checks on a dataset of disast
 The script's goal is to segregate a preprocessed dataset of disaster-related tweets into training, validation, and test sets. The process begins with downloading the 'processed_data' artifact from Weights & Biases and loading it into a DataFrame. It then continues to separate out the features and labels for the machine learning model.
 
 <p align="center">
-   <img src="./img/6_segregation.png" width="600">
+   <img src="./img/6_segregation.png" width="800">
 </p>
 
 ### 6. Model Training
@@ -67,7 +67,7 @@ The script is focused on training four different models on a dataset of disaster
 The script not only saves the trained models as artifacts in Weights & Biases for future reference or deployment but also includes a detailed visualization of the training process for each model. It plots graphs depicting the loss and accuracy metrics over the training epochs, providing a clear view of how each model performs during training.
 
 <p align="center">
-   <img src="./img/7_training.png" width="800">
+   <img src="./img/7_training.png" width="1000">
 </p>
 
 ### 7. Model Testing
@@ -93,24 +93,32 @@ This section summarizes the training and testing accuracy of the different model
 
 These accuracy figures reflect the models' ability to generalize from the training data to unseen data. Higher test accuracy indicates a model with better generalization.
 
-## Confusion Matrices
+## 🔢 Confusion Matrices
 
-Below are the confusion matrices for each of the models used in the classification task. These matrices help us understand the performance of each model in terms of true positives, false positives, true negatives, and false negatives.
+Below are the confusion matrices for each of the models used in the classification task. These matrices help us understand the performance of each model in terms of true positives, false positives, true negatives, and false negatives. Based on the confusion matrices:
+
+- **Model 2** has the worst performance, with an inability to identify any positive cases.
+- **Model 3** improves on Model 2, with some ability to identify positive cases but still with a significant number of false positives.
+- **Model 4** seems to be the most effective model, with a better balance between identifying positive and negative cases and fewer errors in both classes.
 
 <table>
 <tr>
    <th style="text-align: center;">Model 2</th>
    <th style="text-align: center;">Model 3</th>
-   <th style="text-align: center;">Model 4</th>
 </tr>
 <tr>
-   <td><img src="./img/13_model2_matrix.png" width="600"></td>
-   <td><img src="./img/14_model3_matrix.png" width="600"></td>
-   <td><img src="./img/12_model4_matrix.png" width="600"></td>
+   <td><img src="./img/13_model2_matrix.png" alt="Confusion Matrix for Model 2"></td>
+   <td><img src="./img/14_model3_matrix.png" alt="Confusion Matrix for Model 3"></td>
+</tr>
+<tr>
+   <td colspan="2" style="text-align: center;"><strong>Model 4</strong></td>
+</tr>
+<tr>
+   <td colspan="2" style="text-align: center;"><img src="./img/12_model4_matrix.png" alt="Confusion Matrix for Model 4"></td>
 </tr>
 </table>
 
-## Loss and Accuracy Plots
+## 📈 Loss and Accuracy Plots
 
 These plots show the loss and accuracy metrics during the training process for our models. They are indicative of how well the models learned from the training data over time.
 
@@ -118,16 +126,21 @@ These plots show the loss and accuracy metrics during the training process for o
 <tr>
    <th style="text-align: center;">Model 1</th>
    <th style="text-align: center;">Model 2</th>
+</tr>
+<tr>
+   <td><img src="./img/15_model1_loss_acc.png" alt="Loss and Accuracy Plot for Model 1"></td>
+   <td><img src="./img/17_model2_loss_acc.png" alt="Loss and Accuracy Plot for Model 2"></td>
+</tr>
+<tr>
    <th style="text-align: center;">Model 3</th>
    <th style="text-align: center;">Model 4</th>
 </tr>
 <tr>
-   <td><img src="./img/15_model1_loss_acc.png" width="600" alt="Loss and Accuracy Plot for Model 1"></td>
-   <td><img src="./img/17_model2_loss_acc.png" width="600" alt="Loss and Accuracy Plot for Model 2"></td>
-   <td><img src="./img/18_model3_loss_acc.png" width="600" alt="Loss and Accuracy Plot for Model 3"></td>
-   <td><img src="./img/16_model4_loss_acc.png" width="600" alt="Loss and Accuracy Plot for Model 4"></td>
+   <td><img src="./img/18_model3_loss_acc.png" alt="Loss and Accuracy Plot for Model 3"></td>
+   <td><img src="./img/16_model4_loss_acc.png" alt="Loss and Accuracy Plot for Model 4"></td>
 </tr>
 </table>
+
 
 The first graph displays the behavior of Model 1 during training. There is an initial rapid improvement followed by stabilization in both loss and accuracy, suggesting that the model quickly learned the task, but it may be starting to overfit, as indicated by the divergence between training and validation accuracies.
 
