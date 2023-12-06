@@ -111,10 +111,12 @@ Below are the confusion matrices for each of the models used in the classificati
    <td style="text-align: center;"><img src="./img/14_model3_matrix.png" alt="Confusion Matrix for Model 3"></td>
 </tr>
 <tr>
-   <td colspan="2" style="text-align: center;"><strong>Model 4</strong></td>
+   <td style="text-align: center;"><strong>Model 4</strong></td>
+   <td></td>
 </tr>
 <tr>
-   <td colspan="2" style="text-align: center;"><img src="./img/12_model4_matrix.png" alt="Confusion Matrix for Model 4"></td>
+   <td style="text-align: center;"><img src="./img/12_model4_matrix.png" alt="Confusion Matrix for Model 4"></td>
+   <td></td>
 </tr>
 </table>
 
