@@ -12,7 +12,7 @@ The vast amount of existing data and advanced Machine Learning (ML) models have 
 
 ## 📂 Projects
 - 📘 [Python Essentials for MLOps](./Python_Essentials_for_MLOps/)
-- 📘 [Disaster Tweet Pipeline: Classification & Analysis](./Disaster_Tweet_Classification/)
+- 📘 [Disaster Tweet Pipeline: Classification & Analysis](./Pipeline_Disaster_Tweet_Classification/)
 
 🔜 More content will be added as the course progresses.
 
