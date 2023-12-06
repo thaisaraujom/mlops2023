@@ -5,9 +5,7 @@
 This project utilizes Natural Language Processing (NLP) to classify tweets related to natural disasters. It encompasses a comprehensive pipeline, guiding you through fetching data, exploratory data analysis, preprocessing, data checking, segregation, training various models, and testing to evaluate the performance of these models. 
 
 ## 📂 Project Overview
-- **Title:** Classifying Disaster-Related Tweets as Real or Fake
-- **Objective:** 
-This project aims to leverage a solution from the Dataquest.io platform for classifying disaster-related tweets using Natural Language Processing (NLP) techniques. The original solution is implemented in a Jupyter Notebook. The primary objective of this project is to transform the developed solution into a data pipeline, utilizing separate .py files for each stage of the machine learning process and ensuring a streamlined workflow. For effective management of artifacts and execution within the data flow, the Wandb platform is used. Moreover, Apache Airflow is employed to orchestrate the pipeline through Directed Acyclic Graphs (DAGs).
+The goal is to leverage a solution from the Dataquest.io platform to classify disaster-related tweets using Natural Language Processing (NLP) techniques. The original solution is implemented in a Jupyter Notebook. The primary objective of this project is to transform the developed solution into a data pipeline, utilizing separate .py files for each stage of the machine learning process, thereby ensuring a streamlined workflow. For the effective management of artifacts and execution within the data flow, the Wandb platform is utilized. Furthermore, Apache Airflow is employed to orchestrate the pipeline through Directed Acyclic Graphs (DAGs).
 
 <p align="center">
    <img src="./img/9_big-picture.png" width="700">
