@@ -181,7 +181,7 @@ To run the pipeline, make sure Apache Airflow is set up and operational. Define 
    Make sure to replace `your_api_key_here` with your actual API key. This `.env` file should not be committed to your version control system; ensure it's listed in your `.gitignore` file to prevent potential security issues.
 
 ## 🎥 Video Explanation
-Explore the project's methodologies and insights in our detailed [video walkthrough](https://www.youtube.com/watch?v=example-link).
+Explore the project in our [video](https://youtu.be/puVPk2L-vQQ).
 
 ## 👥 Team
 
