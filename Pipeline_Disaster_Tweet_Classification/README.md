@@ -165,7 +165,7 @@ To run the pipeline, make sure Apache Airflow is set up and operational. Define 
    git clone https://github.com/thaisaraujom/mlops2023.git
    ```
 
-3. Navigate to the `Disaster_Tweet_Classification` directory.
+3. Navigate to the `Pipeline_Disaster_Tweet_Classification` directory.
 
 4. Install the required libraries: 
    ```
@@ -174,7 +174,7 @@ To run the pipeline, make sure Apache Airflow is set up and operational. Define 
 
 5. Sign up for a Weights & Biases account to obtain your API key for experiment tracking. Visit the [Weights & Biases sign-up page](https://wandb.ai/signup) to create an account. Once you have your account, locate your API key in the account settings.
 
-   To configure the API key on your machine, add it to the `.env` file in your project's root directory:
+   To configure the API key on your machine, add it to the `.env` file in your project's root directory (dags):
    ```
    WANDB_API_KEY='your_api_key_here'
    ```
