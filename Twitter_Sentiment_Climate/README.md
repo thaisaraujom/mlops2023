@@ -188,7 +188,7 @@ To run this project, follow the steps below:
    ```
 8. Wait until the execution of the `twitter_sentiment.py` finishes, and then, run the script to try the interface:
    ```
-   gradio app.py
+   python app.py
    ```
 
 ## 👥 Team
