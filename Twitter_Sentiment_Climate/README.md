@@ -100,19 +100,19 @@ The classification report is a summary evaluation metric commonly used in machin
 
 Analyzing the provided metrics:
 
-- **Class 0 (Anti)**: Performs very poorly with both precision and recall at zero, indicating the model failed to correctly identify any examples from this class. This could be due to a lack of distinctive features learned or too few examples to learn from.
+- **`Class 0 (Anti)`**: Performs very poorly with both precision and recall at zero, indicating the model failed to correctly identify any examples from this class. This could be due to a lack of distinctive features learned or too few examples to learn from.
 
-- **Class 1 (Neutral)**: Has a precision of 0.59, meaning when the model predicts an example as Class 1, it is correct 59% of the time. However, the recall of 0.21 is low, suggesting that many actual examples of Class 1 are being missed.
+- **`Class 1 (Neutral)`**: Has a precision of 0.59, meaning when the model predicts an example as Class 1, it is correct 59% of the time. However, the recall of 0.21 is low, suggesting that many actual examples of Class 1 are being missed.
 
-- **Class 2 (Pro)**: Is the model's best-performing class, with a precision of 0.64 and a recall of 0.83, indicating the model correctly identifies most examples of Class 2. This is also reflected in the highest F1-Score of 0.72.
+- **`Class 2 (Pro)`**: Is the model's best-performing class, with a precision of 0.64 and a recall of 0.83, indicating the model correctly identifies most examples of Class 2. This is also reflected in the highest F1-Score of 0.72.
 
-- **Class 3 (News)**: Also has a decent performance with a precision of 0.60 and recall of 0.72, showing the model is fairly good at identifying examples from this class.
+- **`Class 3 (News)`**: Also has a decent performance with a precision of 0.60 and recall of 0.72, showing the model is fairly good at identifying examples from this class.
 
-- **Overall Accuracy**: At 0.63, it shows that the model is correct in its overall predictions for about 63% of the examples.
+- **`Overall Accuracy`**: At 0.63, it shows that the model is correct in its overall predictions for about 63% of the examples.
 
-- **Averages**:
-   - **Macro Average**: Low values in precision, recall, and F1-Score indicate the model is not performing consistently across all classes.
-   - **Weighted Average**: Shows slightly better values due to the influence of Class 2, which has a good performance and a larger number of examples.
+- **`Averages`**:
+   - **`Macro Average`**: Low values in precision, recall, and F1-Score indicate the model is not performing consistently across all classes.
+   - **`Weighted Average`**: Shows slightly better values due to the influence of Class 2, which has a good performance and a larger number of examples.
 
 From this analysis, it is clear that the model needs improvement, especially for Class 0, and there is significant variation in performance across different classes.
 
@@ -157,7 +157,7 @@ To run this project, follow the steps below:
    git clone https://github.com/thaisaraujom/mlops2023.git
    ```
 
-2. Navigate to the `Twitter_climate_sentiment` directory.
+2. Navigate to the `Twitter_Sentiment_Climate` directory.
 
 3. Create a virtual environment: 
    ```
