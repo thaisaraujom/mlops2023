@@ -1,6 +1,5 @@
 """
-This DAG is used to fetch and store the data from the disaster tweets project.
-It is composed of two tasks: fetch_and_organize and store_fetch_data.
+This DAG orchestrates the complete pipeline for processing data within the disaster tweets project.
 """
 from datetime import datetime, timedelta
 from airflow.decorators import dag, task, task_group
