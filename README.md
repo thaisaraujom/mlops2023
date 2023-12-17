@@ -13,7 +13,7 @@ The vast amount of existing data and advanced Machine Learning (ML) models have 
 ## 📂 Projects
 - 📘 [Python Essentials for MLOps](./Python_Essentials_for_MLOps/)
 - 📘 [Disaster Tweet Pipeline: Classification & Analysis](./Pipeline_Disaster_Tweet_Classification/)
-- 📘 [Evaluating Climate Perspectives](./Twitter_Sentiment_Classification/)
+- 📘 [Evaluating Climate Perspectives](./Twitter_Sentiment_Climate/)
 
 ## ⚖️ License
 The materials in this repository are licensed under the MIT License. For in-depth details, consult the `LICENSE` file.
